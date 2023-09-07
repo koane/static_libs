@@ -12,7 +12,7 @@ if [ ! -f "/etc/supervisord.conf" ]; then
     echo "创建supervisord配置..." 
     echo_supervisord_conf > /etc/supervisord.conf
     echo "[include]" >> /etc/supervisord.conf
-    echo "files = $HOME/algobeatscpp/algobeats/config/*.conf" >> /etc/supervisord.conf
+    echo "files = $HOME/algobeats/config/*.conf" >> /etc/supervisord.conf
     supervisord -c /etc/supervisord.conf
 fi
 
