@@ -36,6 +36,6 @@ fi
 # 清理文件
 rm -rf ./static_libs
 
-echo "配置完成 supervisor默认配置文件夹:$HOME/algobeatscpp/algobeats/config/ 编辑配置文件"
+echo "配置完成 supervisor默认配置文件夹:$HOME/algobeats/config/ 编辑配置文件"
 echo "如需修改supervisor配置 请修改/etc/supervisord.conf文件并重启supervisor"
 
