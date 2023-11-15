@@ -36,6 +36,9 @@ fi
 # 清理文件
 rm -rf ./static_libs
 
+ulimit -n 65535
+sed -i 's/^minfds=.*/minfds=65535/' /etc/supervisord.conf
+supervisorctl reload
+
 echo "配置完成 supervisor默认配置文件夹:$HOME/algobeats/config/ 编辑配置文件"
 echo "如需修改supervisor配置 请修改/etc/supervisord.conf文件并重启supervisor"
-
